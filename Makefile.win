@@ -4,13 +4,13 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = 01_output_manipulation.o
-LINKOBJ  = 01_output_manipulation.o
+OBJ      = 05_exception.o
+LINKOBJ  = 05_exception.o
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
 BIN      = cppstudy.exe
-CXXFLAGS = $(CXXINCS) 
+CXXFLAGS = $(CXXINCS) -std=c++14
 CFLAGS   = $(INCS) 
 RM       = rm.exe -f
 
@@ -24,5 +24,5 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-01_output_manipulation.o: 01_output_manipulation.cpp
-	$(CPP) -c 01_output_manipulation.cpp -o 01_output_manipulation.o $(CXXFLAGS)
+05_exception.o: 05_exception.cpp
+	$(CPP) -c 05_exception.cpp -o 05_exception.o $(CXXFLAGS)

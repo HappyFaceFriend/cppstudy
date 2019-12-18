@@ -10,7 +10,7 @@ PrivateResource=
 ResourceIncludes=
 MakeIncludes=
 Compiler=
-CppCompiler=
+CppCompiler=-std=c++14_@@_
 Linker=
 IsCpp=1
 Icon=
@@ -19,17 +19,17 @@ ObjectOutput=
 LogOutput=
 LogOutputEnabled=0
 OverrideOutput=0
-OverrideOutputName=
+OverrideOutputName=cppstudy.exe
 HostApplication=
 UseCustomMakefile=0
 CustomMakefile=
 CommandLine=
-Folders=
+Folders=done
 IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0000000000000000000000000
-UnitCount=1
+UnitCount=6
 
 [VersionInfo]
 Major=1
@@ -39,24 +39,73 @@ Build=0
 LanguageID=1033
 CharsetID=1252
 CompanyName=
-FileVersion=
+FileVersion=1.0.0.0
 FileDescription=Developed using the Dev-C++ IDE
 InternalName=
 LegalCopyright=
 LegalTrademarks=
 OriginalFilename=
 ProductName=
-ProductVersion=
+ProductVersion=1.0.0.0
 AutoIncBuildNr=0
 SyncProduct=1
 
 [Unit1]
 FileName=01_output_manipulation.cpp
+Folder=done
+Compile=0
+Link=0
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=$(CPP) -c 01_output_manipulation.cpp -o 01_output_manipulation.o $(CXXFLAGS)
+CompileCpp=1
+
+[Unit2]
+FileName=02_input_stream.cpp
+CompileCpp=1
+Folder=done
+Compile=0
+Link=0
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=$(CPP) -c 02_input_stream.cpp -o 02_input_stream.o $(CXXFLAGS)
+
+[Unit3]
+FileName=03_input_stream_2.cpp
+CompileCpp=1
+Folder=done
+Compile=0
+Link=0
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=$(CPP) -c 03_input_stream_2.cpp -o 03_input_stream_2.o $(CXXFLAGS)
+
+[Unit4]
+FileName=04_file_stream.cpp
+CompileCpp=1
+Folder=done
+Compile=0
+Link=0
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=$(CPP) -c 04_file_stream.cpp -o 04_file_stream.o $(CXXFLAGS)
+
+[Unit5]
+FileName=test1.txt
+Folder=
+Compile=0
+Link=0
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit6]
+FileName=05_exception.cpp
+CompileCpp=1
 Folder=
 Compile=1
 Link=1
 Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
-CompileCpp=1
 
