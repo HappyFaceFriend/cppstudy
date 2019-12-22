@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0000000000000000000000000
-UnitCount=7
+UnitCount=14
 
 [VersionInfo]
 Major=1
@@ -101,6 +101,66 @@ BuildCmd=
 
 [Unit6]
 FileName=05_exception.cpp
+CompileCpp=0
+Folder=done
+Compile=0
+Link=0
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=$(CC) -c 05_exception.cpp -o 05_exception.o $(CFLAGS)
+
+[Unit7]
+FileName=FileException.h
+CompileCpp=1
+Folder=done
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit8]
+FileName=06_exception2.cpp
+CompileCpp=1
+Folder=done
+Compile=0
+Link=0
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=$(CPP) -c 06_exception2.cpp -o 06_exception2.o $(CXXFLAGS)
+
+[Unit9]
+FileName=07_nested_exception.cpp
+CompileCpp=1
+Folder=done
+Compile=0
+Link=0
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=$(CPP) -c 07_nested_exception.cpp -o 07_nested_exception.o $(CXXFLAGS)
+
+[Unit10]
+FileName=08_new_handler.cpp
+CompileCpp=1
+Folder=done
+Compile=0
+Link=0
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=$(CPP) -c 08_new_handler.cpp -o 08_new_handler.o $(CXXFLAGS)
+
+[Unit11]
+FileName=09_ctor_try_block.cpp
+CompileCpp=1
+Folder=done
+Compile=0
+Link=0
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=$(CPP) -c 09_ctor_try_block.cpp -o 09_ctor_try_block.o $(CXXFLAGS)
+
+[Unit12]
+FileName=10_exception_example.cpp
 CompileCpp=1
 Folder=
 Compile=1
@@ -109,8 +169,18 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit7]
-FileName=FileException.h
+[Unit13]
+FileName=GameBoard.h
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit14]
+FileName=10_GameBoard.cpp
 CompileCpp=1
 Folder=
 Compile=1
