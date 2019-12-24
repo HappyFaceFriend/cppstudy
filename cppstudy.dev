@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0000000000000000000000000
-UnitCount=17
+UnitCount=20
 
 [VersionInfo]
 Major=1
@@ -218,4 +218,34 @@ Link=0
 Priority=1000
 OverrideBuildCmd=0
 BuildCmd=$(CPP) -c 13_move_semantics2.cpp -o 13_move_semantics2.o $(CXXFLAGS)
+
+[Unit18]
+FileName=14_thread.cpp
+CompileCpp=1
+Folder=done/04_threads
+Compile=0
+Link=0
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=$(CPP) -c 14_thread.cpp -o 14_thread.o $(CXXFLAGS)
+
+[Unit19]
+FileName=15_thread_exceptions.cpp
+CompileCpp=1
+Folder=done/04_threads
+Compile=0
+Link=0
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=$(CPP) -c 15_thread_exceptions.cpp -o 15_thread_exceptions.o $(CXXFLAGS)
+
+[Unit20]
+FileName=16_atomic_type.cpp
+CompileCpp=1
+Folder=done/04_threads
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
 
