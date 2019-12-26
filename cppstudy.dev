@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0000000000000000000000000
-UnitCount=20
+UnitCount=22
 
 [VersionInfo]
 Major=1
@@ -241,6 +241,26 @@ BuildCmd=$(CPP) -c 15_thread_exceptions.cpp -o 15_thread_exceptions.o $(CXXFLAGS
 
 [Unit20]
 FileName=16_atomic_type.cpp
+CompileCpp=1
+Folder=done/04_threads
+Compile=0
+Link=0
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=$(CPP) -c 16_atomic_type.cpp -o 16_atomic_type.o $(CXXFLAGS)
+
+[Unit21]
+FileName=17_call_once.cpp
+CompileCpp=1
+Folder=done/04_threads
+Compile=0
+Link=0
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=$(CPP) -c 17_call_once.cpp -o 17_call_once.o $(CXXFLAGS)
+
+[Unit22]
+FileName=18_mutexes.cpp
 CompileCpp=1
 Folder=done/04_threads
 Compile=1
