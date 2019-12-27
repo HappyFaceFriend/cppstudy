@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0000000000000000000000000
-UnitCount=22
+UnitCount=23
 
 [VersionInfo]
 Major=1
@@ -261,6 +261,16 @@ BuildCmd=$(CPP) -c 17_call_once.cpp -o 17_call_once.o $(CXXFLAGS)
 
 [Unit22]
 FileName=18_mutexes.cpp
+CompileCpp=1
+Folder=done/04_threads
+Compile=0
+Link=0
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=$(CPP) -c 18_mutexes.cpp -o 18_mutexes.o $(CXXFLAGS)
+
+[Unit23]
+FileName=19_promise_future.cpp
 CompileCpp=1
 Folder=done/04_threads
 Compile=1
