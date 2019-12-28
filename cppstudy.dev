@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0000000000000000000000000
-UnitCount=23
+UnitCount=26
 
 [VersionInfo]
 Major=1
@@ -271,6 +271,36 @@ BuildCmd=$(CPP) -c 18_mutexes.cpp -o 18_mutexes.o $(CXXFLAGS)
 
 [Unit23]
 FileName=19_promise_future.cpp
+CompileCpp=1
+Folder=done/04_threads
+Compile=0
+Link=0
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=$(CPP) -c 19_promise_future.cpp -o 19_promise_future.o $(CXXFLAGS)
+
+[Unit24]
+FileName=20_async.cpp
+CompileCpp=1
+Folder=done/04_threads
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit25]
+FileName=Logger.h
+CompileCpp=1
+Folder=done/04_threads
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit26]
+FileName=Logger.cpp
 CompileCpp=1
 Folder=done/04_threads
 Compile=1
